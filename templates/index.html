@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href= "{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">
+            <i class='bx bxs-movie'></i>OBA's Hub
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+        <a href="login.html" class="btn">Sign In</a>
+    </header>
+
+
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="{{url_for('static', filename='limg/home1.jpg')}}" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Guardians of the Galaxy <br>Volume 2</h1>
+                    <a href="" class="btn">Download Now</a>
+                    <a href="" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="{{url_for('static', filename='limg/home2.png')}}" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Thor: <br>Love and Thunder</h1>
+                    <a href="" class="btn">Download Now</a>
+                    <a href="" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="{{url_for('static', filename='limg/home3.jpg')}}" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Spider-Man <br>No Way Home</h1>
+                    <a href="" class="btn">Download Now</a>
+                    <a href="" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="{{url_for('static', filename='limg/home4.png')}}" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Avengers: <br>End Game</h1>
+                    <a href="" class="btn">Download Now</a>
+                    <a href="" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+    </section>
+
+    
+    <div class="movies" id="movies">
+        <h2 class="heading">Opening This Week</h2>
+        
+        <div class="movies-container">
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m1.jpg')}}" alt="">
+                </div>
+                <h3>Dr.Strange</h3>
+                <span>120 min | Action</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m2.jpg')}}" alt="">
+                </div>
+                <h3>Pathan</h3>
+                <span>120 min | Action</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m3.jpg')}}" alt="">
+                </div>
+                <h3>Batman vs Superman</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m4.jpg')}}" alt="">
+                </div>
+                <h3>John Wick 2</h3>
+                <span>120 min | Action</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m5.jpg')}}" alt="">
+                </div>
+                <h3>Aquaman</h3>
+                <span>120 min | Adventure</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m6.jpg')}}" alt="">
+                </div>
+                <h3>Black Panther</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m7.jpg')}}" alt="">
+                </div>
+                <h3>Uncharted</h3>
+                <span>120 min | Adventure</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m8.jpg')}}" alt="">
+                </div>
+                <h3>Brahmastra</h3>
+                <span>120 min | Action</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m9.jpg')}}" alt="">
+                </div>
+                <h3>Mortal-Engines</h3>
+                <span>120 min | Action</span>
+            </div>
+            
+            <div class="box">
+                <div class="box-limg">
+                    <img src="{{url_for('static', filename='limg/m10.jpg')}}" alt="">
+                </div>
+                <h3>UnderWorld Blood Wars</h3>
+                <span>120 min | Action</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c1.jpg')}}" alt="">
+                    </div>
+                    <h3>Ant-Man and the Wasp:Quantumania</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c2.jpg')}}" alt="">
+                    </div>
+                    <h3>The Flash</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c3.jpg')}}" alt="">
+                    </div>
+                    <h3>Guardians of the Galaxy Vol.3</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c4.jpg')}}" alt="">
+                    </div>
+                    <h3>Shazam! Fury of the Gods</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c5.jpg')}}" alt="">
+                    </div>
+                    <h3>Aquaman and the Lost Kingdom</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c6.jpg')}}" alt="">
+                    </div>
+                    <h3>John Wick:Chapter 4</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <limg src="{{url_for('static', filename='limg/c7.jpg')}}" alt="">
+                    </div>
+                    <h3>Transformer rise of the beasts</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c8.jpg')}}" alt="">
+                    </div>
+                    <h3>Mission: Impossible 7</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c9.png')}}" alt="">
+                    </div>
+                    <h3>Deadpool 3</h3>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="box-limg">
+                        <img src="{{url_for('static', filename='limg/c10.jpg')}}" alt="">
+                    </div>
+                    <h3>Dune: Part two</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe To Get <br>Newsletter</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter Email" required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+
+    
+    <section class="footer">
+        <a href="" class="logo">
+            <i class="bx bxs-movie"></i>OBA's Hub
+        </a>
+        <div class="social">
+            <a href=""><i class='bx bxl-faceDownload'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+
+    
+    <div class="copyright">
+        <p>&#169; OBA's Hub All Right Reserved</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
